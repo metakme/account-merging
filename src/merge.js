@@ -1,5 +1,4 @@
 const merge = (accounts) => {
-  const merged = [];
   const emailIndex = {};
 
   accounts.forEach(acc => {
@@ -11,7 +10,6 @@ const merge = (accounts) => {
         name: acc.name
       };
       records.add(newPersonRecord);
-      merged.push(newPersonRecord);
     }
 
     let mergedRecord;
